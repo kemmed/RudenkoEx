@@ -12,6 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{04E27872-4AE
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D0D8380B-0AC1-4DC2-89A2-CB5D8899B946}"
+	ProjectSection(SolutionItems) = preProject
+		test\Отчет по тестированию.docx = test\Отчет по тестированию.docx
+		test\Тест требования.docx = test\Тест требования.docx
+		test\Тест-план.docx = test\Тест-план.docx
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudenkoApp", "src\RudenkoApp\RudenkoApp.csproj", "{EB79F598-3F5F-4177-91FB-81DD86DED02D}"
 EndProject
