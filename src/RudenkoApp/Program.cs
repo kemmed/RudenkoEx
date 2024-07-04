@@ -32,7 +32,12 @@ namespace RudenkoApp
             {
                 Console.WriteLine($"[{route.NumRoute}] {route.CountStop} остановок ({route.TimeRoute} мин.)");
             }
-            
+
+            string fileName = "route.json";
+            if(trolleybusStation.JsonWrite(fileName))
+                Console.WriteLine($"Отсортированный список маршрутов успешно сохранет в файле {fileName}");
+            else
+                Console.WriteLine("Не удалорсь сохранить данные в файл.");
         }
     }
 }
