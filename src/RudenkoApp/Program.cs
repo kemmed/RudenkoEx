@@ -25,6 +25,14 @@ namespace RudenkoApp
                 }
             }
             trolleybusStation.Add(count);
+
+            Console.WriteLine("Остсортированный список маршрутов по числу остановок + время в пути (по убыванию):");
+            trolleybusStation.Sort();
+            foreach(Route route in trolleybusStation.Routes)
+            {
+                Console.WriteLine($"[{route.NumRoute}] {route.CountStop} остановок ({route.TimeRoute} мин.)");
+            }
+            
         }
     }
 }

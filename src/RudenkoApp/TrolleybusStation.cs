@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace RudenkoApp
 {
@@ -71,12 +73,12 @@ namespace RudenkoApp
 
         public void Sort()
         {
-
+            Routes.Sort((x,y) => string.Compare($"{y.CountStop} {y.TimeRoute}", $"{x.CountStop} {x.TimeRoute}"));
         }
 
         public void JsonWrite()
         {
-
+                       
         }
     }
 }
