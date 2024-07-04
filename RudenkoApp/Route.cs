@@ -9,6 +9,5 @@ namespace RudenkoApp
         public string NumRoute;
         public int CountStop;
         public int TimeRoute;
-
     }
 }
