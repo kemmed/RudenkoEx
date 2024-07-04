@@ -28,10 +28,6 @@ namespace RudenkoApp
 
             Console.WriteLine("Остсортированный список маршрутов по числу остановок + время в пути (по возрастанию):");
             trolleybusStation.Sort();
-            foreach(Route route in trolleybusStation.Routes)
-            {
-                Console.WriteLine($"[{route.NumRoute}] {route.CountStop} остановок ({route.TimeRoute} мин.)");
-            }
 
             string fileName = "route.json";
             if(trolleybusStation.JsonWrite(fileName))

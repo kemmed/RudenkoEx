@@ -72,7 +72,11 @@ namespace RudenkoApp
 
         public void Sort()
         {
-            Routes.Sort((x,y) => string.Compare($"{x.CountStop} {x.TimeRoute}", $"{y.CountStop} {y.TimeRoute}"));
+            Routes.Sort((x,y) => string.Compare($"{y.CountStop}{y.TimeRoute}", $"{x.CountStop}{x.TimeRoute}"));
+            foreach (Route route in Routes)
+            {
+                Console.WriteLine($"[{route.NumRoute}] {route.CountStop} остановок ({route.TimeRoute} мин.)");
+            }
         }
 
         public bool JsonWrite(string fileName)
